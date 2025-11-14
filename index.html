@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate-key="document_title">Amadou Alpha DIABY - Ingénieur Logiciel Full-Stack & DevOps</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/styles.css"> 
+    
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="container">
+            <a href="#profil" data-translate-key="nav_profil">Profil</a>
+            <a href="#projets" data-translate-key="nav_projets">Projets</a>
+            <a href="#experience-pro" data-translate-key="nav_experience">Expérience</a>
+            <a href="#competences" data-translate-key="nav_competences">Compétences</a>
+            <a href="#formation" data-translate-key="nav_formation">Formation</a>
+        </div>
+    </nav>
+    <section id="hero">
+        <div class="container">
+            <div class="language-selector">
+                <a href="#" class="lang-flag active" data-lang="fr">🇫🇷</a>
+                <a href="#" class="lang-flag" data-lang="en">🇬🇧</a>
+            </div>
+            
+            <div class="hero-content">
+                <img src="img/profil.jpg" alt="Photo de profil Amadou Alpha Diaby" class="profile-photo">
+                <div>
+                    <h1>Amadou Alpha DIABY</h1>
+                    <h2 data-translate-key="title_h2">INGÉNIEUR LOGICIEL FULL-STACK</h2>
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <a href="mailto:diabyamadoualpha01@gmail.com"><i class="fas fa-envelope"></i> diabyamadoualpha01@gmail.com</a>
+                <a href="https://www.linkedin.com/in/amadou-alpha-diaby/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/diabyamadoualpha01?tab=repositories" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+<section id="profil">
+        <div class="container">
+            <h3 data-translate-key="h3_profil"><i class="fas fa-user-tie"></i> Profil & Expertise</h3>
+            <div class="card" style="box-shadow: 0 5px 15px rgba(0,0,0,0.1); padding: 30px; border-left: 5px solid var(--secondary-color);">
+                <p style="font-size: 1.15em; margin: 0;" data-translate-key="p_profil_p1">
+                    Ingénieur Logiciel diplômé de l'ESIEA <img src="img/logoESIEA.png" alt="Logo ESIEA" class="company-logo">, j'ai une forte appétence pour le développement d'applications Back-end robustes, principalement avec l'écosystème Java/Spring Boot.
+                </p>
+                <p style="font-size: 1.15em; margin-top: 15px;" data-translate-key="p_profil_p2">
+                    Je suis axé sur l'application rigoureuse des fondamentaux DevOps pour assurer l'intégration continue et la fiabilité des systèmes. Mon objectif est de mettre en pratique ces compétences et de contribuer activement à la qualité et l'efficacité des projets au sein d'une équipe dynamique.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets">
+        <div class="container">
+            <h3 data-translate-key="h3_projets">Projets Personnels Stratégiques</h3>
+            <div class="grid-2">
+                
+                <div class="card">
+                    <div class="card-header">
+                        <p class="role-title" data-translate-key="p_samasalon_title">SamaSalon - Gestion de Salon (Full-Stack)</p>
+                        <p class="dates" data-translate-key="p_samasalon_dates">En production</p>
+                    </div>
+                    <a href="https://www.samasalon.com/dashboard" target="_blank" data-translate-key="a_samasalon_link"> lien du projet</a>
+                    <p class="tech-tags"><strong>Technologies</strong>: React/JavaScript, Firebase/Firestore</p>
+                    <p data-translate-key="p_samasalon_desc">Conception d'une plateforme Full-Stack pour gérer transactions, dépenses et bilans de salons de coiffure.</p>
+                    <ul>
+                        <li data-translate-key="li_samasalon_1">Modélisation de la base de données (Salons, Utilisateurs, Transactions) pour un suivi financier précis.</li>
+                        <li data-translate-key="li_samasalon_2">Architecture <strong>BaaS (Firebase)</strong>pour l'authentification sécurisée et l'accès rapide aux données.</li>
+                        <li data-translate-key="li_samasalon_3">Interface utilisateur (React) avec gestion des rôles (Admin/Coiffeur) et affichage des bilans en temps réel.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <p class="role-title" data-translate-key="p_taskmanager_title">Gestionnaire de Tâches Collaboratif (API Java)</p>
+                        <p class="dates" data-translate-key="p_taskmanager_dates">Projet Back-end</p>
+                    </div>
+                    <p class="tech-tags"><strong>Technologies</strong>: Java Spring Boot, PostgreSQL, Docker, JWT, JUnit, Swagger</p>
+                    <p data-translate-key="p_taskmanager_desc">Développement d'une API REST back-end robuste et sécurisée pour la gestion collaborative de tâches.</p>
+                    <ul>
+                        <li data-translate-key="li_taskmanager_1">API REST complète en <strong>Java/Spring Boot</strong> avec authentification <strong>JWT</strong>.</li>
+                        <li data-translate-key="li_taskmanager_2">Tests automatisés Backend avec <strong>JUnit</strong> et documentation API via <strong>Swagger</strong>.</li>
+                        <li data-translate-key="li_taskmanager_3">Déploiement de l'application et de la base de données <strong>PostgreSQL</strong> via <strong>Docker</strong>.</li>
+                        <li data-translate-key="li_taskmanager_4">Respect des principes de qualité logicielle (revues de code, clean code).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <p class="role-title" style="color: var(--dark-color);" data-translate-key="p_other_title">Autres Réalisations</p>
+                <div class="grid-3">
+                    <div class="card">
+                        <p class="role-title" style="font-size: 1.1em; color: #555;" data-translate-key="p_movieapi_title">API de Gestion de Films (Java/NoSQL)</p>
+                        <p class="tech-tags">Java, API REST, MongoDB, Docker</p>
+                        <ul><li data-translate-key="li_movieapi_1">API REST en Java, intégrant <strong>MongoDB (NoSQL)</strong> pour la gestion des critiques.</li></ul>
+                    </div>
+                    <div class="card">
+                        <p class="role-title" style="font-size: 1.1em; color: #555;" data-translate-key="p_hackathon_title"><strong>Hackathon DCW 2025</strong></p>
+                        <p class="tech-tags" data-translate-key="p_hackathon_tech">1er Prix - Conseil Digital / Décarbonation E-commerce</p>
+                        <ul><li data-translate-key="li_hackathon_1">Lauréat du 1er Prix lors de l'étude de cas sur la stratégie de <strong>décarbonation</strong> d'un acteur e-commerce.</li></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="experience-pro">
+            <div class="container">
+                <h3 data-translate-key="h3_experience"> Impact en Entreprise (SFR)<img src="img/logosfr.png" alt="Logo SFR" class="company-logo"></h3>
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="role-title" data-translate-key="p_exp1_title">Chef de Projet Technique - Modernisation de l'outil de supervision</p>
+                            <p class="dates" data-translate-key="p_exp1_dates">Fev. 2025 - Août 2025</p>
+                        </div>
+                        <p class="tech-tags"><strong>Technologies</strong>: Kubernetes, Istio, GitLab CI/CD, Cloud privé, AWS S3</p>
+                        <ul>
+                            <li data-translate-key="li_exp1_1">Pilotage de la refonte d'un outil de supervision critique impactant <strong>+200 utilisateurs</strong>.</li>
+                            <li data-translate-key="li_exp1_2">Mise en place de l'architecture <strong>Kubernetes</strong> conteneurisée (namespaces dev/val/prod).</li>
+                            <li data-translate-key="li_exp1_3">Intégration d’<strong>Istio</strong> (Service Mesh) pour la gestion de l’API Gateway et la sécurisation des services.</li>
+                            <li data-translate-key="li_exp1_4">Garantie de qualité des déploiements via <strong>GitLab CI/CD</strong>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="role-title" data-translate-key="p_exp2_title">Ingénieur Logiciel Full-Stack</p>
+                            <p class="dates" data-translate-key="p_exp2_dates">Août 2023 - Août 2025</p>
+                        </div>
+                        <p class="tech-tags"><strong>Technologies</strong>: JavaScript, Svelte, PHP, PostgreSQL, Python, Java, Spring Boot</p>
+                        <ul>
+                            <li data-translate-key="li_exp2_1">Développement de pages web affichant les données réseau et les tickets en temps réel (supervision optimisée).</li>
+                            <li data-translate-key="li_exp2_2">Migration et intégration de <strong>cinq+</strong> fonctionnalités clés (ex: alertes de tickets), améliorant performance et UX.</li>
+                            <li data-translate-key="li_exp2_3"><strong>Automatisation</strong> des murs d’images affichant des informations réseau dynamiques et réduisant les tâches manuelles quotidiennes.</li>
+                            <li data-translate-key="li_exp2_4">Conception et implémentation d’un service <strong>SOAP</strong> en Java Spring Boot pour assurer la communication inter-applications.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="competences">
+            <div class="container">
+                <h3 data-translate-key="h3_competences">Compétences</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4 data-translate-key="h4_skills_code"><i class="fas fa-code"></i> Langages, Frameworks & Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Hibernate</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-translate-key="h4_skills_db"><i class="fas fa-database"></i> Bases de données</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PostgreSQL (SQL)</span>
+                            <span class="skill-tag">MongoDB (NoSQL)</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-translate-key="h4_skills_devops"><i class="fas fa-cloud"></i> DevOps & Cloud</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Istio</span>
+                            <span class="skill-tag">GitLab CI/CD</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">Ansible</span>
+                            <span class="skill-tag">Kafka</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Cloud Computing</span>
+                            <span class="skill-tag">Microservices</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-translate-key="h4_skills_other"><i class="fas fa-layer-group"></i> Autres</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Highcharts</span>
+                            <span class="skill-tag">SCRUM</span>
+                            <span class="skill-tag">Data Structures & Algorithms</span>
+                            <span class="skill-tag">SaaS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="languages">
+            <div class="container">
+                <h3 data-translate-key="h3_languages"><i class="fas fa-globe"></i> Langues</h3>
+                <div class="grid-3">
+                    <div class="card" style="text-align: center;">
+                        <p class="role-title" data-translate-key="p_lang_fr_title">Français</p>
+                        <p style="margin: 0; color: #555;" data-translate-key="p_lang_fr_level">Langue Maternelle</p>
+                    </div>
+                    <div class="card" style="text-align: center;">
+                        <p class="role-title" data-translate-key="p_lang_en_title">Anglais</p>
+                        <p style="margin: 0; color: #555;" data-translate-key="p_lang_en_level">Niveau B2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    <section id="formation">
+            <div class="container">
+                <h3 data-translate-key="h3_formation">Parcours Académique</h3>
+                <div class="grid-3">
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="role-title">ESIEA | Cycle Ingénieur</p>
+                        </div>
+                        <p data-translate-key="p_formation_esiea_major">Majeure: <strong>Software Engineering</strong></p>
+                        <ul class="card-content-list">
+                            <li data-translate-key="li_formation_esiea_1">Software Engineering & DevOps</li>
+                            <li data-translate-key="li_formation_esiea_2">Cloud, Networks, Virtualization</li>
+                            <li data-translate-key="li_formation_esiea_3">Machine Learning, NoSQL, GPU Programming</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="role-title">ESIGELEC | Cycle Ingénieur Généraliste</p>
+                        </div>
+                        <ul class="card-content-list">
+                            <li data-translate-key="li_formation_esigelec_1">Mathématiques, Java</li>
+                            <li data-translate-key="li_formation_esigelec_2">Électronique, Systèmes Embarqués</li>
+                            <li data-translate-key="li_formation_esigelec_3">Automatisation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="role-title">ESMT-ESIGELEC | Classes Préparatoires Scientifiques</p>
+                        </div>
+                        <ul class="card-content-list">
+                            <li data-translate-key="li_formation_prep_1">Mathématiques, Physique</li>
+                            <li data-translate-key="li_formation_prep_2">Ingénierie, Programmation</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+    <footer>
+        <div class="container">
+            <p><i class="far fa-copyright"></i> 2025 Amadou Alpha DIABY. <br><span data-translate-key="footer_text">Portfolio Ingénieur Logiciel.</span></p>
+        </div>
+    </footer>
+    
+    <script>
+        const translations = {
+            'en': {
+                'nav_profil': 'Profile',
+                'nav_projets': 'Projects',
+                'nav_experience': 'Experience',
+                'nav_competences': 'Skills',
+                'nav_formation': 'Education',
+
+                'document_title': "Amadou Alpha DIABY - Full-Stack Software Engineer",
+                'title_h2': "SOFTWARE ENGINEER",
+                
+                'h3_profil': "Profile & Expertise",
+                'p_profil_p1': 'Software Engineer graduated from ESIEA <img src="img/logoESIEA.png" alt="ESIEA Logo" class="company-logo">, I have a strong aptitude for developing robust Back-end applications, primarily using the Java/Spring Boot ecosystem.',
+                'p_profil_p2': 'I am committed to applying core DevOps principles with rigor to ensure seamless integration and reliable systems. My goal is to put these skills into practice and actively contribute to building high-quality, efficient projects within a dynamic team.',
+                
+                'h3_projets': "Personal Projects",
+                'p_samasalon_title': "SamaSalon - Salon Management (Full-Stack)",
+                'p_samasalon_dates': "In production",
+                'a_samasalon_link': "project link",
+                'p_samasalon_desc': "Designed a Full-Stack platform to manage transactions, expenses, and financial summaries for hair salons.",
+                'li_samasalon_1': "Database modeling (Salons, Users, Transactions) for precise financial tracking.",
+                'li_samasalon_2': "<strong>BaaS (Firebase)</strong> architecture for secure authentication and fast data access.",
+                'li_samasalon_3': "User Interface (React) with role management (Admin/Hairdresser) and real-time financial reporting.",
+
+                'p_taskmanager_title': "Collaborative Task Manager (Java API)",
+                'p_taskmanager_dates': "Back-end Project",
+                'p_taskmanager_desc': "Developed a robust and secure back-end REST API for collaborative task management.",
+                'li_taskmanager_1': "Full REST API in <strong>Java/Spring Boot</strong> with <strong>JWT</strong> authentication.",
+                'li_taskmanager_2': "Automated Backend testing with <strong>JUnit</strong> and API documentation via <strong>Swagger</strong>.",
+                'li_taskmanager_3': "Deployment of the application and <strong>PostgreSQL</strong> database via <strong>Docker</strong>.",
+                'li_taskmanager_4': "Adherence to software quality principles (code reviews, clean code).",
+                
+                'p_other_title': "Other Accomplishments",
+                'p_movieapi_title': "Movie Management API (Java/NoSQL)",
+                'li_movieapi_1': "Java REST API, integrating <strong>MongoDB (NoSQL)</strong> for review management.",
+                'p_hackathon_title': "<strong>Hackathon DCW 2025</strong>",
+                'p_hackathon_tech': "1st Prize - Digital Consulting / E-commerce Decarbonization",
+                'li_hackathon_1': "1st Prize winner for the case study on the <strong>decarbonization</strong> strategy of an e-commerce player.",
+
+                'h3_experience': "Work Experience (SFR)<img src=\"img/logosfr.png\" alt=\"SFR Logo\" class=\"company-logo\">",
+                'p_exp1_title': "Technical Project Manager - Supervision Tool Modernization",
+                'p_exp1_dates': "Feb. 2025 - Aug. 2025",
+                'li_exp1_1': "Managed the refactoring of a critical supervision tool impacting <strong>+200 users</strong>.",
+                'li_exp1_2': "Implementation of containerized <strong>Kubernetes</strong> architecture (dev/val/prod namespaces).",
+                'li_exp1_3': "Integration of <strong>Istio</strong> (Service Mesh) for API Gateway management and service security.",
+                'li_exp1_4': "Ensured deployment quality via <strong>GitLab CI/CD</strong>.",
+                
+                'p_exp2_title': "Full-Stack Software Engineer",
+                'p_exp2_dates': "Aug. 2023 - Aug. 2025",
+                'li_exp2_1': "Developed web pages displaying network data and tickets in real-time (optimized supervision).",
+                'li_exp2_2': "Migration and integration of <strong>5+</strong> key features (e.g., ticket alerts), improving performance and UX.",
+                'li_exp2_3': "<strong>Automated</strong> video walls displaying dynamic network information and reducing daily manual tasks.",
+                'li_exp2_4': "Designed and implemented a <strong>SOAP</strong> service in Java Spring Boot to ensure inter-application communication.",
+                
+                'h3_competences': "Skills",
+                'h4_skills_code': '<i class="fas fa-code"></i> Languages, Frameworks & Tools',
+                'h4_skills_db': '<i class="fas fa-database"></i> Databases',
+                'h4_skills_devops': '<i class="fas fa-cloud"></i> DevOps & Cloud',
+                'h4_skills_other': '<i class="fas fa-layer-group"></i> Other',
+                
+                'h3_languages': "Languages",
+                'p_lang_fr_title': "French",
+                'p_lang_fr_level': "Native Speaker",
+                'p_lang_en_title': "English",
+                'p_lang_en_level': "Fluent",
+                
+                'h3_formation': "EDUCATION",
+                'p_formation_esiea_major': "Major: <strong>Software Engineering</strong>",
+                'li_formation_esiea_1': "Software Engineering & DevOps",
+                'li_formation_esiea_2': "Cloud, Networks, Virtualization",
+                'li_formation_esiea_3': "Machine Learning, NoSQL, GPU Programming",
+                'li_formation_esigelec_1': "Mathematics, Java",
+                'li_formation_esigelec_2': "Electronics, Embedded Systems",
+                'li_formation_esigelec_3': "Automation",
+                'li_formation_prep_1': "Mathematics, Physics",
+                'li_formation_prep_2': "Engineering, Programming",
+
+                'footer_text': "Software Engineer Portfolio."
+            },
+            'fr': {
+                'nav_profil': 'Profil',
+                'nav_projets': 'Projets',
+                'nav_experience': 'Expérience',
+                'nav_competences': 'Compétences',
+                'nav_formation': 'Formation',
+                
+                'document_title': "Amadou Alpha DIABY - Ingénieur Logiciel Full-Stack",
+                'title_h2': "INGÉNIEUR LOGICIEL FULL-STACK",
+
+                'h3_profil': "Profil & Expertise",
+                'p_profil_p1': 'Ingénieur Logiciel diplômé de l\'ESIEA <img src="img/logoESIEA.png" alt="Logo ESIEA" class="company-logo">, j\'ai une forte appétence pour le développement d\'applications Back-end robustes, principalement avec l\'écosystème Java/Spring Boot.',
+                'p_profil_p2': 'Je suis axé sur l\'application rigoureuse des fondamentaux DevOps pour assurer l\'intégration continue et la fiabilité des systèmes. Mon objectif est de mettre en pratique ces compétences et de contribuer activement à la qualité et l\'efficacité des projets au sein d\'une équipe dynamique.',
+                
+                'h3_projets': "Projets Personnels Stratégiques",
+                'p_samasalon_title': "SamaSalon - Gestion de Salon (Full-Stack)",
+                'p_samasalon_dates': "En production",
+                'a_samasalon_link': "lien du projet",
+                'p_samasalon_desc': "Conception d'une plateforme Full-Stack pour gérer transactions, dépenses et bilans de salons de coiffure.",
+                'li_samasalon_1': "Modélisation de la base de données (Salons, Utilisateurs, Transactions) pour un suivi financier précis.",
+                'li_samasalon_2': "Architecture <strong>BaaS (Firebase)</strong>pour l'authentification sécurisée et l'accès rapide aux données.",
+                'li_samasalon_3': "Interface utilisateur (React) avec gestion des rôles (Admin/Coiffeur) et affichage des bilans en temps réel.",
+                
+                'p_taskmanager_title': "Gestionnaire de Tâches Collaboratif (API Java)",
+                'p_taskmanager_dates': "Projet Back-end",
+                'p_taskmanager_desc': "Développement d'une API REST back-end robuste et sécurisée pour la gestion collaborative de tâches.",
+                'li_taskmanager_1': "API REST complète en <strong>Java/Spring Boot</strong> avec authentification <strong>JWT</strong>.",
+                'li_taskmanager_2': "Tests automatisés Backend avec <strong>JUnit</strong> et documentation API via <strong>Swagger</strong>.",
+                'li_taskmanager_3': "Déploiement de l'application et de la base de données <strong>PostgreSQL</strong> via <strong>Docker</strong>.",
+                'li_taskmanager_4': "Respect des principes de qualité logicielle (revues de code, clean code).",
+
+                'p_other_title': "Autres Réalisations",
+                'p_movieapi_title': "API de Gestion de Films (Java/NoSQL)",
+                'li_movieapi_1': "API REST en Java, intégrant <strong>MongoDB (NoSQL)</strong> pour la gestion des critiques.",
+                'p_hackathon_title': "<strong>Hackathon DCW 2025</strong>",
+                'p_hackathon_tech': "1er Prix - Conseil Digital / Décarbonation E-commerce",
+                'li_hackathon_1': "Lauréat du 1er Prix lors de l'étude de cas sur la stratégie de <strong>décarbonation</strong> d'un acteur e-commerce.",
+                
+                'h3_experience': " Impact en Entreprise (SFR)<img src=\"img/logosfr.png\" alt=\"Logo SFR\" class=\"company-logo\">",
+                'p_exp1_title': "Chef de Projet Technique - Modernisation de l'outil de supervision",
+                'p_exp1_dates': "Fev. 2025 - Août 2025",
+                'li_exp1_1': "Pilotage de la refonte d'un outil de supervision critique impactant <strong>+200 utilisateurs</strong>.",
+                'li_exp1_2': "Mise en place de l'architecture <strong>Kubernetes</strong> conteneurisée (namespaces dev/val/prod).",
+                'li_exp1_3': "Intégration d’<strong>Istio</strong> (Service Mesh) pour la gestion de l’API Gateway et la sécurisation des services.",
+                'li_exp1_4': "Garantie de qualité des déploiements via <strong>GitLab CI/CD</strong>.",
+                
+                'p_exp2_title': "Ingénieur Logiciel Full-Stack",
+                'p_exp2_dates': "Août 2023 - Août 2025",
+                'li_exp2_1': "Développement de pages web affichant les données réseau et les tickets en temps réel (supervision optimisée).",
+                'li_exp2_2': "Migration et intégration de <strong>cinq+</strong> fonctionnalités clés (ex: alertes de tickets), améliorant performance et UX.",
+                'li_exp2_3': "<strong>Automatisation</strong> des murs d’images affichant des informations réseau dynamiques et réduisant les tâches manuelles quotidiennes.",
+                'li_exp2_4': "Conception et implémentation d’un service <strong>SOAP</strong> en Java Spring Boot pour assurer la communication inter-applications.",
+                
+                'h3_competences': "Compétences",
+                'h4_skills_code': '<i class="fas fa-code"></i> Langages, Frameworks & Tools',
+                'h4_skills_db': '<i class="fas fa-database"></i> Bases de données',
+                'h4_skills_devops': '<i class="fas fa-cloud"></i> DevOps & Cloud',
+                'h4_skills_other': '<i class="fas fa-layer-group"></i> Autres',
+                
+                'h3_languages': "Langues",
+                'p_lang_fr_title': "Français",
+                'p_lang_fr_level': "Langue Maternelle",
+                'p_lang_en_title': "Anglais",
+                'p_lang_en_level': "Niveau B2",
+                
+                'h3_formation': "Parcours Académique",
+                'p_formation_esiea_major': "Majeure: <strong>Software Engineering</strong>",
+                'li_formation_esiea_1': "Software Engineering & DevOps",
+                'li_formation_esiea_2': "Cloud, Networks, Virtualization",
+                'li_formation_esiea_3': "Machine Learning, NoSQL, GPU Programming",
+                'li_formation_esigelec_1': "Mathématiques, Java",
+                'li_formation_esigelec_2': "Électronique, Systèmes Embarqués",
+                'li_formation_esigelec_3': "Automatisation",
+                'li_formation_prep_1': "Mathématiques, Physique",
+                // Correction : Le guillemet double manquait dans la clé française
+                'li_formation_prep_2': "Ingénierie, Programmation" 
+            }
+        };
+
+        // Fonction pour changer la langue
+        function setLanguage(lang) {
+            const currentLangData = translations[lang];
+
+            // 1. Mise à jour des éléments avec data-translate-key
+            document.querySelectorAll('[data-translate-key]').forEach(element => {
+                const key = element.getAttribute('data-translate-key');
+                if (currentLangData[key]) {
+                    // Utiliser innerHTML pour préserver les balises <strong> et <img>
+                    element.innerHTML = currentLangData[key];
+                }
+            });
+
+            // 2. Mise à jour de l'attribut lang de la page
+            document.documentElement.lang = lang;
+
+            // 3. Mise à jour du titre de la page (élément <title>)
+            document.title = currentLangData['document_title'];
+
+            // 4. Mise à jour de l'état "actif" des drapeaux
+            document.querySelectorAll('.lang-flag').forEach(flag => {
+                flag.classList.remove('active');
+                if (flag.getAttribute('data-lang') === lang) {
+                    flag.classList.add('active');
+                }
+            });
+        }
+
+        // Événement au clic sur les drapeaux
+        document.querySelectorAll('.lang-flag').forEach(flag => {
+            flag.addEventListener('click', function(e) {
+                e.preventDefault();
+                const lang = this.getAttribute('data-lang');
+                setLanguage(lang);
+            });
+        });
+
+        // Initialisation de la langue par défaut au chargement de la page (Français)
+        setLanguage('fr'); 
+    </script>
+</body>
+</html>

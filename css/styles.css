@@ -1,0 +1,339 @@
+
+:root {
+    --primary-color: #0077B6; /* Bleu technique et percutant */
+    --secondary-color: #00B4D8; /* Bleu clair */
+    --dark-color: #1A202C; /* Arrière-plan sombre pour le contraste */
+    --light-color: #f8f9fa;
+    --text-color: #333;
+    --font-main: 'Montserrat', sans-serif;
+    --font-code: 'Space Mono', monospace;
+}
+
+/* --- Global & Base --- */
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* --- Navigation Fixe (Défilement) --- */
+#navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 10px 0;
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+#navbar a:hover {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+/* --- Section Hero (Introduction) --- */
+#hero {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    position: relative;
+}
+
+#hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 5px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#hero h2 {
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.contact-info a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: white;
+}
+
+/* --- Sélecteur de Langue --- */
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.lang-flag {
+    font-size: 1.8em;
+    text-decoration: none;
+    margin-left: 10px;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.lang-flag:hover {
+    opacity: 1;
+}
+
+.lang-flag.active {
+    opacity: 1;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+/* --- Section Hero - Photo et Contenu --- */
+.hero-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--secondary-color);
+    margin-right: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Titres de Section (H3) --- */
+section h3 {
+    font-size: 2.2em;
+    font-weight: 800;
+    color: var(--dark-color);
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+section h3::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* --- Grilles et Cartes (Projets/Expériences) --- */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-header .role-title {
+    font-size: 1.3em;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.card-header .dates {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #666;
+}
+
+.tech-tags {
+    font-family: var(--font-code);
+    font-size: 0.85em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.tech-tags strong {
+    color: var(--dark-color);
+}
+
+/* --- Listes (ul > li) --- */
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+li::before {
+    content: '\f058'; /* Icône de checkmark */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Règle simplifiée, retire les propriétés redondantes avec 'ul' */
+.card-content-list {
+    margin: 0;
+    color: #666;
+    font-size: 0.95em;
+}
+
+/* --- Style pour les logos --- */
+.company-logo {
+    height: 1.2em;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* --- Section Compétences --- */
+#competences .skills-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    text-align: center;
+    overflow-x: auto; 
+    padding-bottom: 10px;
+}
+
+.skill-category {
+    flex: 0 0 250px;
+    min-width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 5px solid var(--primary-color);
+}
+
+.skill-category h4 {
+    font-size: 1.4em;
+    color: var(--dark-color);
+    margin-top: 0;
+}
+
+.skill-tag {
+    display: inline-block;
+    background: var(--light-color);
+    color: var(--text-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 4px;
+    font-size: 0.9em;
+    font-family: var(--font-code);
+}
+
+/* Style spécifique à la section Langues */
+#languages .card p {
+    margin: 5px 0;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--dark-color);
+    color: #ccc;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 30px;
+}
+
+/* --- Responsive --- */
+
+/* Cacher la barre de navigation sur mobile */
+@media (max-width: 600px) {
+    #navbar {
+        display: none;
+    }
+}
+
+/* Réduire les grilles à une seule colonne sur tablette/mobile */
+@media (max-width: 1000px) {
+    .grid-3, .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ajustements pour Hero sur mobile */
+@media (max-width: 768px) {
+    .language-selector {
+        top: 10px;
+        right: 10px;
+    }
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-photo {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
